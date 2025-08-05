@@ -159,11 +159,9 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center">
             <p className="text-muted-foreground text-sm">
-              © 2025 Gen Z Retention Analysis. Data compiled from comprehensive workforce surveys and HR analytics.
+              © 2025 Gen Z Retention Analysis. 
             </p>
-            <p className="text-muted-foreground text-xs mt-2">
-              Built with Chart.js • Designed for modern workforce insights
-            </p>
+            
           </div>
         </div>
       </footer>
