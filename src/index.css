@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gen Z Retention Analysis Design System */
+@layer base {
+  :root {
+    /* Monochrome Palette - Black, White, Grey */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
+    
+    /* Brand Colors - Grayscale */
+    --primary: 0 0% 20%;
+    --primary-foreground: 0 0% 98%;
+    --primary-soft: 0 0% 96%;
+    
+    --secondary: 0 0% 45%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-soft: 0 0% 94%;
+    
+    --accent: 0 0% 65%;
+    --accent-foreground: 0 0% 9%;
+    --accent-soft: 0 0% 92%;
+    
+    /* Chart Colors - Vibrant Palette */
+    --chart-1: 220 70% 55%;  /* Blue */
+    --chart-2: 142 69% 58%;  /* Green */
+    --chart-3: 45 93% 58%;   /* Yellow */
+    --chart-4: 348 83% 65%;  /* Pink/Red */
+    --chart-5: 262 83% 58%;  /* Purple */
+    --chart-6: 24 95% 53%;   /* Orange */
+    
+    /* Neutrals */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
+    --border: 0 0% 90%;
+    
+    /* Gradients - Subtle Grey Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(0, 0%, 20%), hsl(0, 0%, 35%));
+    --gradient-soft: linear-gradient(135deg, hsl(0, 0%, 96%), hsl(0, 0%, 94%));
+    --gradient-accent: linear-gradient(135deg, hsl(0, 0%, 65%), hsl(0, 0%, 50%));
+    
+    /* Shadows - Subtle Grey Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(0, 0%, 0%, 0.08);
+    --shadow-card: 0 8px 32px -4px hsl(0, 0%, 0%, 0.1);
+    --shadow-intense: 0 12px 40px -8px hsl(0, 0%, 0%, 0.15);
+    
+    /* Typography */
+    --font-size-hero: clamp(2.5rem, 5vw, 4rem);
+    --font-size-h2: clamp(1.5rem, 3vw, 2.5rem);
+    --font-size-h3: clamp(1.25rem, 2.5vw, 1.75rem);
+    
+    /* Spacing */
+    --space-section: clamp(4rem, 8vw, 8rem);
+    --space-card: clamp(1.5rem, 3vw, 2.5rem);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
